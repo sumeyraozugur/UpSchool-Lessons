@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_messages">No Messages</string>
+    <string name="when_you_have_messages_you_ll_n_see_them_here">When you have messages you’ll \n see them here</string>
+    <string name="add_adress">Add Adress</string>
+    <string name="please_add_your_address_for_your_nbetter_experience">Please add your address for your \nbetter experience</string>
+    <string name="no_address_yet">No Address Yet</string>
+    <string name="result_not_found">Result Not Found</string>
+    <string name="please_try_again_with_another_n_keywords_or_maybe_use_generic_term">Please try again with another\n keywords or maybe use generic term</string>
+    <string name="search_again">Search Again</string>
+    <string name="no_favourites">No Favourites</string>
+    <string name="you_can_add_an_item_to_your_n_favourites_by_clicking_star_icon">You can add an item to your\n favourites by clicking “Star Icon”</string>
+    <string name="go_back">Go Back</string>
+    <string name="looks_like_you_haven_t_added_nanything_to_your_cart_yet">Looks like you haven’t added \nanything to your cart yet</string>
+    <string name="go_shop">Go Shop</string>
+    <string name="go_home">Go Home</string>
+    <string name="sorry_the_page_you_re_looking_for_n_can_t_be_found">Sorry, the page you’re looking for\n can’t be found</string>
+    <string name="page_not_found">Page Not Found</string>
+    <string name="whoops_no_internet_connection_n_found_please_check_your_connection">Whoops, no internet connection \n found. Please check your connection</string>
+    <string name="try_again">Try Again</string>
+    <string name="refresh">Refresh</string>
+    <string name="textviewwhen_you_get_notifications_they_ll_nshow_up_here">TextViewWhen you get notifications, they’ll \nshow up here</string>
+    <string name="no_notifications_yet">No Notifications Yet</string>
+</resources>

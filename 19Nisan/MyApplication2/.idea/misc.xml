@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable/ic__04_illustration.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable/ic_cart_illustartion.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable/ic_launcher_background.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable/ic_no_address_illustration.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable/ic_no_connection_illustartion.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable/ic_no_favorite_illustration.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable/ic_no_message_illustration.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable/ic_no_notification_illustration.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/drawable/ic_not_found_illustration.xml" value="0.243" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/layout/fragment_eight.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/layout/fragment_five.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/layout/fragment_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/layout/fragment_seven.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/layout/fragment_six.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/MyApplication22/app/src/main/res/layout/fragment_third.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/19Nisan/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/19Nisan/MyApplication2/app/src/main/res/layout/fragment_eight.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/19Nisan/MyApplication2/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/19Nisan/MyApplication2/app/src/main/res/layout/fragment_five.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/19Nisan/MyApplication2/app/src/main/res/layout/fragment_fourth.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/19Nisan/MyApplication2/app/src/main/res/layout/fragment_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/19Nisan/MyApplication2/app/src/main/res/layout/fragment_seven.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/19Nisan/MyApplication2/app/src/main/res/layout/fragment_six.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/19Nisan/MyApplication2/app/src/main/res/layout/fragment_third.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.sum.myapplication2.FirstFragment"
+        android:label="FirstFragment" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.sum.myapplication2.SecondFragment"
+        android:label="SecondFragment" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.sum.myapplication2.ThirdFragment"
+        android:label="ThirdFragment" >
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.sum.myapplication2.FourthFragment"
+        android:label="FourthFragment" >
+        <action
+            android:id="@+id/action_fourthFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fiveFragment"
+        android:name="com.sum.myapplication2.FiveFragment"
+        android:label="FiveFragment" >
+        <action
+            android:id="@+id/action_fiveFragment_to_sixFragment"
+            app:destination="@id/sixFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixFragment"
+        android:name="com.sum.myapplication2.SixFragment"
+        android:label="SixFragment" >
+        <action
+            android:id="@+id/action_sixFragment_to_sevenFragment"
+            app:destination="@id/sevenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sevenFragment"
+        android:name="com.sum.myapplication2.SevenFragment"
+        android:label="SevenFragment" >
+        <action
+            android:id="@+id/action_sevenFragment_to_eightFragment"
+            app:destination="@id/eightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eightFragment"
+        android:name="com.sum.myapplication2.EightFragment"
+        android:label="EightFragment" >
+        <action
+            android:id="@+id/action_eightFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+</navigation>
