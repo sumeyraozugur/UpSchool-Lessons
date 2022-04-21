@@ -2,6 +2,9 @@
 
 ## MyApplication2
 
+![design2](https://user-images.githubusercontent.com/41166029/164536888-e62b3311-aed4-45da-9812-cee027b54b42.gif)
+
+
 ```xml
   <style name="ButonStyle">
         <item name="android:backgroundTint">#307EF4</item>
