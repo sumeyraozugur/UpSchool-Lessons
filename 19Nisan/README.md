@@ -1,8 +1,12 @@
 # 19 Nisan
+## MyApplication
+![design1](https://user-images.githubusercontent.com/41166029/164555375-751405b0-96ac-43b5-8239-5b150fb5bb4f.gif)
+
 
 ## MyApplication2
 
-![design2](https://user-images.githubusercontent.com/41166029/164536888-e62b3311-aed4-45da-9812-cee027b54b42.gif)
+![design2](https://user-images.githubusercontent.com/41166029/164555276-095ff12c-4bf2-4cbd-81aa-ece3a6153885.gif)
+
 
 
 ```xml
