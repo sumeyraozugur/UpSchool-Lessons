@@ -49,7 +49,6 @@
         android:id="@+id/button6"
         android:layout_width="176dp"
         android:layout_height="55dp"
-        android:layout_marginTop="36dp"
         android:text="@string/go_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

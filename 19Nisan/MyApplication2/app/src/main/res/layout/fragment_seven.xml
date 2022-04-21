@@ -47,7 +47,6 @@
         android:id="@+id/button7"
         android:layout_width="169dp"
         android:layout_height="55dp"
-        android:layout_marginTop="36dp"
         android:text="@string/go_shop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

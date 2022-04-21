@@ -46,9 +46,9 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
         style="@style/ButonStyle"
+        app:backgroundTint="@color/black"
         android:layout_width="167dp"
         android:layout_height="55dp"
-        android:layout_marginTop="36dp"
         android:text="@string/go_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

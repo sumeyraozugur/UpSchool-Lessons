@@ -23,5 +23,5 @@
     <string name="refresh">Refresh</string>
     <string name="textviewwhen_you_get_notifications_they_ll_nshow_up_here">TextViewWhen you get notifications, they’ll \nshow up here</string>
     <string name="no_notifications_yet">No Notifications Yet</string>
-    <string name="go_back">Go Back</string>
+
 </resources>

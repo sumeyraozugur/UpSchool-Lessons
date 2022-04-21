@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15"
         style="@style/SubTitleStyle"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
