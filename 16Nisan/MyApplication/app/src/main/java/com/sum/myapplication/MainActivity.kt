@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         image = findViewById(R.id.imageView)
         button =findViewById(R.id.button)
-        val frame_anim = image.background as AnimationDrawable
+        val frame_anim = image.drawable as AnimationDrawable
         button.setOnClickListener {
             frame_anim.start()
 
