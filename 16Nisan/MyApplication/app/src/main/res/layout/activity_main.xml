@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:background="@drawable/line_shape"
+        android:clickable="true"
         android:text="Button"
         android:stateListAnimator="@animator/my_selector"
         android:textColor="@color/white"

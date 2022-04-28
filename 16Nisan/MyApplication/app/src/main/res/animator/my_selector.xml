@@ -12,7 +12,7 @@
                 android:propertyName="scaleY"
                 android:duration="10"
                 android:valueTo="1.5"
-                android:valueType="intType"/>
+                android:valueType="floatType"/>
         </set>
 
 
@@ -31,9 +31,8 @@
                 android:propertyName="scaleY"
                 android:duration="10"
                 android:valueTo="1.5"
-                android:valueType="intType"/>
+                android:valueType="floatType"/>
         </set>
-
 
 
 
