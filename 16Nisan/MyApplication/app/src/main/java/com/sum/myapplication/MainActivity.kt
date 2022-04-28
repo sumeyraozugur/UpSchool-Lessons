@@ -1,5 +1,6 @@
 package com.sum.myapplication
 
+import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
@@ -16,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         image = findViewById(R.id.imageView)
         button =findViewById(R.id.button)
-        val anim = AnimationUtils.loadAnimation(this, R.anim.my_anim)
+        val frame_anim = image.background as AnimationDrawable
         button.setOnClickListener {
-            image.startAnimation(anim)
+            frame_anim.start()
 
         }
 
