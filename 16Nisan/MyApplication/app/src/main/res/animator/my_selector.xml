@@ -15,10 +15,9 @@
                 android:valueType="floatType"/>
         </set>
 
-
-
-
     </item>
+
+
     <item android:state_pressed="false">
         <set>
 
@@ -30,7 +29,7 @@
             <objectAnimator
                 android:propertyName="scaleY"
                 android:duration="10"
-                android:valueTo="1.5"
+                android:valueTo="1"
                 android:valueType="floatType"/>
         </set>
 
