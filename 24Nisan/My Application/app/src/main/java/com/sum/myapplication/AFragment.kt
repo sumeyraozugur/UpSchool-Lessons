@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 
 class AFragment : Fragment() {
@@ -28,7 +29,7 @@ class AFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val button: Button = view.findViewById(R.id.button)
         button.setOnClickListener {
-            findNavController().navigate(R.id.action_AFragment_to_BFragment)
+            findNavController().navigate(R.id.action_AFragment_to_CActivity, bundleOf("isLogin" to true))
         }
     }
 

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_AFragment_to_BFragment"
             app:destination="@id/BFragment" />
+        <action
+            android:id="@+id/action_AFragment_to_CActivity"
+            app:destination="@id/CActivity" />
     </fragment>
     <fragment
         android:id="@+id/BFragment"
@@ -22,6 +25,10 @@
         <action
             android:id="@+id/action_BFragment_to_simpleDialog"
             app:destination="@id/simpleDialog" />
+        <argument
+            android:name="isLogin"
+            app:argType="boolean"
+            android:defaultValue="false" />
     </fragment>
     <dialog
         android:id="@+id/simpleDialog"
