@@ -18,5 +18,13 @@
         android:id="@+id/BFragment"
         android:name="com.sum.myapplication.BlFragment"
         android:label="fragment_b"
-        tools:layout="@layout/fragment_b" />
+        tools:layout="@layout/fragment_b" >
+        <action
+            android:id="@+id/action_BFragment_to_simpleDialog"
+            app:destination="@id/simpleDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/simpleDialog"
+        android:name="com.sum.myapplication.SimpleDialog"
+        android:label="SimpleDialog" />
 </navigation>
