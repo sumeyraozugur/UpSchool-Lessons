@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_AFragment_to_CActivity"
             app:destination="@id/CActivity" />
+        <action
+            android:id="@+id/action_AFragment_to_nav_start"
+            app:destination="@id/nav_start" />
     </fragment>
     <fragment
         android:id="@+id/BFragment"
@@ -45,4 +48,5 @@
             app:argType="boolean"
             android:defaultValue="false" />
     </activity>
+    <include app:graph="@navigation/nav_start" />
 </navigation>
