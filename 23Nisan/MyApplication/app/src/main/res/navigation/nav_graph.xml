@@ -7,10 +7,6 @@
 
 
 
-    <action  android:id ="@+id/myaction"
-        app:destination="@+id/BFragment"
-        />
-
 
 
     <fragment
@@ -35,7 +31,12 @@
         android:id="@+id/BFragment"
         android:name="com.sum.myapplication.BFragment"
         android:label="fragment_b"
-        tools:layout="@layout/fragment_b" />
+        tools:layout="@layout/fragment_b" >
+        <argument
+            android:name="mynumber"
+            app:argType="integer"
+           />
+    </fragment>
     <dialog
         android:id="@+id/dialogFragment"
         android:name="com.sum.myapplication.DialogFragment"

@@ -32,9 +32,10 @@ class AFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val button:Button = view.findViewById(R.id.button)
         button.setOnClickListener {
-            val number =9
-            val bundle = bundleOf("number" to 3)
-            findNavController().navigate(R.id.BFragment,bundle)
+            val myNumber =19
+            val action = AFragmentDirections.actionAFragmentToBFragment(myNumber)
+
+            findNavController().navigate(action)
 
         }
 
