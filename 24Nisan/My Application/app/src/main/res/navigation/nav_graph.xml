@@ -25,10 +25,7 @@
         <action
             android:id="@+id/action_BFragment_to_simpleDialog"
             app:destination="@id/simpleDialog" />
-        <argument
-            android:name="isLogin"
-            app:argType="boolean"
-            android:defaultValue="false" />
+       />
     </fragment>
     <dialog
         android:id="@+id/simpleDialog"
@@ -42,5 +39,10 @@
         android:id="@+id/CActivity"
         android:name="com.sum.myapplication.CActivity"
         android:label="activity_cactivity"
-        tools:layout="@layout/activity_cactivity" />
+        tools:layout="@layout/activity_cactivity" >
+        <argument
+            android:name="isLogin"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </activity>
 </navigation>
