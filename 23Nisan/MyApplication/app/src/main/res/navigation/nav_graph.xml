@@ -7,6 +7,12 @@
 
 
 
+    <action  android:id ="@+id/myaction"
+        app:destination="@+id/BFragment"
+        />
+
+
+
     <fragment
         android:id="@+id/AFragment"
         android:name="com.sum.myapplication.AFragment"
