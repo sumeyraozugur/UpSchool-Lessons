@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AFragment">
+
+
+
+    <fragment
+        android:id="@+id/AFragment"
+        android:name="com.sum.myapplication.AFragment"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_AFragment_to_BFragment"
+            app:destination="@id/BFragment" />
+        <action
+            android:id="@+id/action_AFragment_to_dialogFragment"
+            app:destination="@id/dialogFragment" />
+        <action
+            android:id="@+id/action_AFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="com.sum.myapplication.BFragment"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" />
+    <dialog
+        android:id="@+id/dialogFragment"
+        android:name="com.sum.myapplication.DialogFragment"
+        android:label="fragment_dialog"
+        tools:layout="@layout/fragment_dialog" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.sum.myapplication.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" >
+        <argument
+            android:name="user"
+            app:argType="string"
+            android:defaultValue="bos" />
+    </activity>
+
+</navigation>
