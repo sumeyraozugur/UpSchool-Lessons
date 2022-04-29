@@ -3,6 +3,7 @@ package com.sum.myapplication
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.findNavController
@@ -15,7 +16,8 @@ class SimpleDialog:DialogFragment() {
         builder.setMessage("Hello! I am Alert Dialog")
         builder.setPositiveButton("Cool", object: DialogInterface.OnClickListener {
             override fun onClick(dialog:DialogInterface, which:Int) {
-                findNavController().navigate(R.id.action_simpleDialog_to_CActivity)
+                //findNavController().navigate(R.id.action_simpleDialog_to_CActivity)
+                startActivity(Intent(context,CActivity::class.java))
             }
         })
         builder.setNegativeButton("Cancel", object: DialogInterface.OnClickListener {
