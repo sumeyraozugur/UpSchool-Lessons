@@ -35,8 +35,8 @@ class AFragment : Fragment() {
             //findNavController().navigate(R.id.action_AFragment_to_dialogFragment)
            // findNavController().navigate(R.id.action_AFragment_to_loginActivity)
             //startActivity(Intent(context, LoginActivity::class.java))//ıntentle de gönderebilirsin ama nav kullanman daha doğru.
-            findNavController().navigate(R.id.action_AFragment_to_loginActivity,bundleOf("user" to "sumeyra"))
-          //  findNavController().navigate(R.id.action_AFragment_to_nav_start,bundleOf("user" to "sumeyra"))
+            //findNavController().navigate(R.id.action_AFragment_to_loginActivity,bundleOf("user" to "sumeyra"))
+          findNavController().navigate(R.id.action_AFragment_to_nav_start)
            // findNavController().navigate(R.id.BFragment)
         }
 
