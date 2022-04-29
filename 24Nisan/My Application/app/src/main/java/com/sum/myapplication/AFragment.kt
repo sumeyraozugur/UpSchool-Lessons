@@ -29,7 +29,7 @@ class AFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val button: Button = view.findViewById(R.id.button)
         button.setOnClickListener {
-            findNavController().navigate(R.id.action_AFragment_to_nav_start)
+            findNavController().navigate(R.id.myaction)
         }
     }
 

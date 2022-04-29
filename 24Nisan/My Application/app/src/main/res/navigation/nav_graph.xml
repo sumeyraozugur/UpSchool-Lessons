@@ -5,21 +5,14 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/AFragment">
 
+    <action android:id="@+id/myaction"
+        app:destination="@+id/nav_start"/>
+
     <fragment
         android:id="@+id/AFragment"
         android:name="com.sum.myapplication.AFragment"
         android:label="fragment_a"
-        tools:layout="@layout/fragment_a" >
-        <action
-            android:id="@+id/action_AFragment_to_BFragment"
-            app:destination="@id/BFragment" />
-        <action
-            android:id="@+id/action_AFragment_to_CActivity"
-            app:destination="@id/CActivity" />
-        <action
-            android:id="@+id/action_AFragment_to_nav_start"
-            app:destination="@id/nav_start" />
-    </fragment>
+        tools:layout="@layout/fragment_a" />
     <fragment
         android:id="@+id/BFragment"
         android:name="com.sum.myapplication.BlFragment"
