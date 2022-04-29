@@ -32,12 +32,10 @@ class AFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val button:Button = view.findViewById(R.id.button)
         button.setOnClickListener {
-            //findNavController().navigate(R.id.action_AFragment_to_dialogFragment)
-           // findNavController().navigate(R.id.action_AFragment_to_loginActivity)
-            //startActivity(Intent(context, LoginActivity::class.java))//ıntentle de gönderebilirsin ama nav kullanman daha doğru.
-            //findNavController().navigate(R.id.action_AFragment_to_loginActivity,bundleOf("user" to "sumeyra"))
-          //findNavController().navigate(R.id.myaction)
-            findNavController().navigate(R.id.BFragment)
+            val number =9
+            val bundle = bundleOf("number" to 3)
+            findNavController().navigate(R.id.BFragment,bundle)
+
         }
 
     }
