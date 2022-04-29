@@ -26,5 +26,14 @@
     <dialog
         android:id="@+id/simpleDialog"
         android:name="com.sum.myapplication.SimpleDialog"
-        android:label="SimpleDialog" />
+        android:label="SimpleDialog" >
+        <action
+            android:id="@+id/action_simpleDialog_to_CActivity"
+            app:destination="@id/CActivity" />
+    </dialog>
+    <activity
+        android:id="@+id/CActivity"
+        android:name="com.sum.myapplication.CActivity"
+        android:label="activity_cactivity"
+        tools:layout="@layout/activity_cactivity" />
 </navigation>

@@ -5,6 +5,7 @@ import android.app.Dialog
 import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
+import androidx.navigation.fragment.findNavController
 
 class SimpleDialog:DialogFragment() {
 
@@ -14,7 +15,7 @@ class SimpleDialog:DialogFragment() {
         builder.setMessage("Hello! I am Alert Dialog")
         builder.setPositiveButton("Cool", object: DialogInterface.OnClickListener {
             override fun onClick(dialog:DialogInterface, which:Int) {
-                dismiss()
+                findNavController().navigate(R.id.action_simpleDialog_to_CActivity)
             }
         })
         builder.setNegativeButton("Cancel", object: DialogInterface.OnClickListener {
