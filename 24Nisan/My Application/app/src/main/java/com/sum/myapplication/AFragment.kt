@@ -30,13 +30,12 @@ class AFragment : Fragment() {
         val button: Button = view.findViewById(R.id.button)
         val btnBack: Button = view.findViewById(R.id.backA)
         button.setOnClickListener {
-            val isLogin =true
-            val action = AFragmentDirections.actionAFragmentToBFragment(isLogin)
-            findNavController().navigate(action)
+
+            findNavController().navigate(R.id.action_AFragment_to_BFragment)
 
         }
         btnBack.setOnClickListener {
-            findNavController().navigateUp() //silmiyor arkaya alıyor.
+            findNavController().navigateUp()
         }
     }
 

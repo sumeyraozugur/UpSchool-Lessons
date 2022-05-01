@@ -25,22 +25,20 @@
             android:name="isLogin"
             app:argType="boolean"
            />
+        <action
+            android:id="@+id/action_BFragment_to_CFragment"
+            app:destination="@id/CFragment" />
 
     </fragment>
-    <dialog
-        android:id="@+id/simpleDialog"
-        android:name="com.sum.myapplication.SimpleDialog"
-        android:label="SimpleDialog" >
+    <fragment
+        android:id="@+id/CFragment"
+        android:name="com.sum.myapplication.CFragment"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" >
         <action
-            android:id="@+id/action_simpleDialog_to_CActivity"
-            app:destination="@id/CActivity" />
-    </dialog>
-    <activity
-        android:id="@+id/CActivity"
-        android:name="com.sum.myapplication.CActivity"
-        android:label="activity_cactivity"
-        tools:layout="@layout/activity_cactivity" >
-
-    </activity>
-    <include app:graph="@navigation/nav_start" />
+            android:id="@+id/action_CFragment_to_AFragment"
+            app:destination="@id/AFragment"
+            app:popUpTo="@id/AFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
