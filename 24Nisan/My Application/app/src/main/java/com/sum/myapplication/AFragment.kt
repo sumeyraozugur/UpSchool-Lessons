@@ -29,7 +29,7 @@ class AFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val button: Button = view.findViewById(R.id.button)
         button.setOnClickListener {
-            findNavController().navigate(R.id.nav_start)
+            findNavController().navigate(R.id.myaction)//I need an action  for safe arg
         }
     }
 
