@@ -9,8 +9,7 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
@@ -20,18 +19,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            app:srcCompat="@{itemclothes.imageResId}"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/image1" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/clothes_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Fit and Flare"
-            android:textColor="#222222"
-            android:textSize="14sp"
+            android:layout_marginTop="3dp"
+            android:text="@{itemclothes.title}"
             app:layout_constraintEnd_toEndOf="@+id/clothes_image"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/clothes_image"
@@ -42,22 +39,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="120.99"
+            android:text="@{itemclothes.price}"
+            android:textColor="#222222"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/clothes_title"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/clothes_title"
-            app:layout_constraintTop_toBottomOf="@+id/clothes_title" />
+            app:layout_constraintTop_toBottomOf="@+id/clothes_title"
+ />
 
-        <!-- @null arkaplanı almamızı sağladı yaptıktan sonra build et-->
         <ImageButton
             android:id="@+id/clothes_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:background="@null"
-            app:layout_constraintEnd_toEndOf="@+id/clothes_image"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/clothes_title"
+            app:layout_constraintEnd_toEndOf="@+id/clothes_image"
             app:layout_constraintTop_toBottomOf="@+id/clothes_image"
             app:srcCompat="@drawable/ic_combined_shape" />
     </androidx.constraintlayout.widget.ConstraintLayout>
