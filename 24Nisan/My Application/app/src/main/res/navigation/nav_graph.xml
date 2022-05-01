@@ -5,23 +5,27 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/AFragment">
 
-    <action android:id="@+id/myaction"
-        app:destination="@+id/nav_start"/>
 
     <fragment
         android:id="@+id/AFragment"
         android:name="com.sum.myapplication.AFragment"
         android:label="fragment_a"
-        tools:layout="@layout/fragment_a" />
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_AFragment_to_BFragment"
+            app:destination="@id/BFragment" />
+    </fragment>
     <fragment
         android:id="@+id/BFragment"
         android:name="com.sum.myapplication.BlFragment"
         android:label="fragment_b"
         tools:layout="@layout/fragment_b" >
-        <action
-            android:id="@+id/action_BFragment_to_simpleDialog"
-            app:destination="@id/simpleDialog" />
-       />
+
+        <argument
+            android:name="isLogin"
+            app:argType="boolean"
+           />
+
     </fragment>
     <dialog
         android:id="@+id/simpleDialog"
@@ -36,10 +40,7 @@
         android:name="com.sum.myapplication.CActivity"
         android:label="activity_cactivity"
         tools:layout="@layout/activity_cactivity" >
-        <argument
-            android:name="isLogin"
-            app:argType="boolean"
-            android:defaultValue="false" />
+
     </activity>
     <include app:graph="@navigation/nav_start" />
 </navigation>
