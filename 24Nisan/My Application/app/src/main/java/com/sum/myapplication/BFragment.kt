@@ -31,11 +31,15 @@ class BlFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val button:Button = view.findViewById(R.id.btnDialog)
+        val backButton:Button = view.findViewById(R.id.backButton)
         val arg:BlFragmentArgs by navArgs()
         Log.v("isLogin",arg.isLogin.toString())
 
         button.setOnClickListener {
 
+        }
+        backButton.setOnClickListener {
+            findNavController().popBackStack()
         }
 
     }

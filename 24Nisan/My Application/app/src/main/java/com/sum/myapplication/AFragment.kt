@@ -28,11 +28,15 @@ class AFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val button: Button = view.findViewById(R.id.button)
+        val btnBack: Button = view.findViewById(R.id.backA)
         button.setOnClickListener {
             val isLogin =true
             val action = AFragmentDirections.actionAFragmentToBFragment(isLogin)
             findNavController().navigate(action)
 
+        }
+        btnBack.setOnClickListener {
+            findNavController().popBackStack()
         }
     }
 
