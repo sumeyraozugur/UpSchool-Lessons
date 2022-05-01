@@ -39,7 +39,7 @@ class BlFragment : Fragment() {
 
         }
         backButton.setOnClickListener {
-            findNavController().popBackStack()
+            findNavController().navigateUp()
         }
 
     }

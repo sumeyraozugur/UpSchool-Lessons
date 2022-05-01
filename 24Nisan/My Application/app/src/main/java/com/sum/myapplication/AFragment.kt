@@ -36,7 +36,7 @@ class AFragment : Fragment() {
 
         }
         btnBack.setOnClickListener {
-            findNavController().popBackStack()
+            findNavController().navigateUp() //silmiyor arkaya alıyor.
         }
     }
 
