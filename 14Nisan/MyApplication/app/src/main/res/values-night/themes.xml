@@ -15,7 +15,6 @@
 
 
     </style>
-    <!-- Text Title-->
     <style name="TextTitle">
         <item name="android:gravity">center</item>
         <item name="android:textAllCaps">false</item>
@@ -26,4 +25,5 @@
         <item name="android:fontFamily">@font/architects_daughter</item>
 
     </style>
+
 </resources>
