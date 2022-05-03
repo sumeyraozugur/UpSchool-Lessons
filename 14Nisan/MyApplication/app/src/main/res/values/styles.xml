@@ -9,6 +9,7 @@
         <item name="android:textColor">@android:color/holo_blue_dark</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/architects_daughter</item>
     </style>
 
     <!--Text Title End -->
