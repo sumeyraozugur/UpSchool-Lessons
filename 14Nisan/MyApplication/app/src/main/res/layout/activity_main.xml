@@ -17,5 +17,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499"
-        style="@style/TextTitle" />
+        style="@style/MyTextTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
