@@ -2,13 +2,12 @@ package com.sum.layouts
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
 import com.sum.layouts.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(),View.OnClickListener {
+class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private lateinit var user: User
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding =DataBindingUtil.setContentView(this@MainActivity,R.layout.activity_main)
@@ -17,19 +16,11 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         init()
     }
     private fun init(){
-        binding.myButton.text ="asakjskaskask"
-        binding.myButton.setOnClickListener(this)
-        binding.myButton2.setOnClickListener(this)
-        binding.myText
+        user = User("Sümeyra","Özuğur")
+        binding.setVariable(BR.user,user)// id 'kotlin-kapt' should add for BR
+
 
     }
 
-    override fun onClick(view: View?) {
-        when(view?.id){
-            binding.myButton.id -> {
-                //Click Listener
-            }
-            binding.myButton2.id ->{}
-        }
-    }
+
 }
