@@ -7,6 +7,7 @@ import android.view.MenuItem
 import androidx.appcompat.widget.Toolbar
 
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
@@ -16,6 +17,7 @@ import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var navController: NavController
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,10 +50,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId) {
-            R.id.settings -> {findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.settings)
-            true}
-            else ->
-            super.onOptionsItemSelected(item)
+            R.id.settings ->{
+                if(navController.currentDestination?.id != R.id.settings){
+                    navController.navigate(R.id.settings)
+                }
+            true
+        }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 
