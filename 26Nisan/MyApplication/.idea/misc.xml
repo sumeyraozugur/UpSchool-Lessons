@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/26Nisan/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/26Nisan/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/26Nisan/MyApplication/app/src/main/res/layout/fragment_favorites.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/26Nisan/MyApplication/app/src/main/res/layout/fragment_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/26Nisan/MyApplication/app/src/main/res/layout/fragment_setting.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/Desktop/UpSchool-Lessons/26Nisan/MyApplication/app/src/main/res/menu/navigation_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
