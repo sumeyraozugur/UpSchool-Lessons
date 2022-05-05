@@ -11,4 +11,5 @@
 ### Genel Notlar:
   ``android:scaleType ="fitXY"``
 ekranı kapla demek </br>
-  **Aspect Ratio** : Ui bileşeni üzerinde en boy oranını korumamızı sağlar
+  **Aspect Ratio** : Ui bileşeni üzerinde en boy oranını korumamızı sağlar</br>
+  **BR** kullanımı için 
