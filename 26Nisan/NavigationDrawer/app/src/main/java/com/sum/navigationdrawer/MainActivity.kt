@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navigationView:NavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        navController = findNavController(R.id.nav_host_fragment_content_main)
 
         appBarConfiguration = AppBarConfiguration(setOf(R.id.list, R.id.favorites,R.id.settings), drawerLayout)
 
@@ -54,8 +54,8 @@ class MainActivity : AppCompatActivity() {
                 if(navController.currentDestination?.id != R.id.settings){
                     navController.navigate(R.id.settings)
                 }
-            true
-        }
+                true
+           }
             else -> super.onOptionsItemSelected(item)
         }
     }
