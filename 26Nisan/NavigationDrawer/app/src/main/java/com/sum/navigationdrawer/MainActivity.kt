@@ -2,6 +2,8 @@ package com.sum.navigationdrawer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.widget.Toolbar
 
 import androidx.drawerlayout.widget.DrawerLayout
@@ -38,8 +40,24 @@ class MainActivity : AppCompatActivity() {
         navigationView.setupWithNavController(navController)
 
     }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId) {
+            R.id.settings -> {findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.settings)
+            true}
+            else ->
+            super.onOptionsItemSelected(item)
+        }
+    }
+
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }
