@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/list"
-        android:name="com.sum.myapplication.ListFragment"
+        android:name="com.sum.navigationdrawer.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" />
     <fragment
         android:id="@+id/favorites"
-        android:name="com.sum.myapplication.FavoritesFragment"
+        android:name="com.sum.navigationdrawer.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" />
     <fragment
         android:id="@+id/settings"
-        android:name="com.sum.myapplication.SettingFragment"
+        android:name="com.sum.navigationdrawer.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />
 </navigation>

@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val navController = navHostFragment.navController
 
-        val navigationView: NavigationView = findViewById(R.id.nav_graph)
+        val navigationView: NavigationView = findViewById(R.id.navigation_view)
         navigationView.setupWithNavController(navController)
 
     }
