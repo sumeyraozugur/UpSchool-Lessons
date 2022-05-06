@@ -7,7 +7,7 @@
 ### Notlar:
 - `android:textAllCaps = "true"`
 - ` AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)` theme değiştirmek için.
-- android:gravity = "right|center"
+- `android:gravity = "right|center"`
 
 FontWeight ile fontSize arasındaki fark nedir?
 
