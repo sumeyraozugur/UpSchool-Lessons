@@ -1,2 +1,9 @@
+## İçerik
+- Material Colors
+- Dimension
+- RTL Support(right-> start , left -> end)
+
+
+## Ek Notlar
 - [Color](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=9C27B0&secondary.color=8E24AA)
 - [Sorurce](https://developer.android.com/guide/topics/resources/drawable-resource#Shape)
