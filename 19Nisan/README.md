@@ -5,7 +5,7 @@
   - Behavior
   - Ui
 - Navigasyon 
- - Fragment kullanımı
+  - Fragment kullanımı
 ## MyApplication
 ![design1](https://user-images.githubusercontent.com/41166029/164555375-751405b0-96ac-43b5-8239-5b150fb5bb4f.gif)
 
