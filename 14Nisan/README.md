@@ -5,3 +5,4 @@
 
 ### Notlar:
 - `android:textAllCaps = "true"`
+- ` AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)` theme değiştirmek için.
