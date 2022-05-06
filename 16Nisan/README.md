@@ -2,6 +2,7 @@
 - Material Colors
 - Dimension
 - RTL Support(right-> start , left -> end)
+- Android Accessibility Suite 
 
 
 ## Ek Notlar
