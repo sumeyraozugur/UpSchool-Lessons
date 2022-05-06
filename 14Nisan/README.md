@@ -2,6 +2,7 @@
 - Styles
 - Themes and Fonts
   - [custom](https://www.dafont.com/) fontlar için tıklayın.
+- Databinding (daha önceki layout projesine eklendi) 
 
 ### Notlar:
 - `android:textAllCaps = "true"`
