@@ -8,6 +8,9 @@
                         <androidx.appcompat.widget.AppCompatButton `
                          `android:background="@drawable/line_shape"`
                           bu şekilde kullanabilirsin.
+- Animations
+  - Propert Animation
+  - View Animation 
 
 
 ## Ek Notlar
