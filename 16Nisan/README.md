@@ -3,6 +3,7 @@
 - Dimension
 - RTL Support(right-> start , left -> end)
 - Android Accessibility Suite (Content Description)
+- Drawables Kullanımı(shape.xml)
 
 
 ## Ek Notlar
