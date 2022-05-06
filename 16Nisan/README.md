@@ -11,6 +11,7 @@
 - Animations
   - Propert Animation
   - View Animation 
+    -  Tween Animation
 
 
 ## Ek Notlar
