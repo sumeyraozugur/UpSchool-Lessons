@@ -4,6 +4,10 @@
 - RTL Support(right-> start , left -> end)
 - Android Accessibility Suite (Content Description)
 - Drawables Kullanımı(shape.xml)
+  - custom shape için `
+                        <androidx.appcompat.widget.AppCompatButton `
+                         `android:background="@drawable/line_shape"`
+                          bu şekilde kullanabilirsin.
 
 
 ## Ek Notlar
