@@ -12,6 +12,7 @@
   - Propert Animation
   - View Animation 
     -  Tween Animation
+    -  Frame Animation(Animation Drawable)
 
 
 ## Ek Notlar
