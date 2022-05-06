@@ -19,3 +19,4 @@
 - `android:supportRtl = "true"` it comes automatically in Manifest
 - [Color](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=9C27B0&secondary.color=8E24AA)
 - [Sorurce](https://developer.android.com/guide/topics/resources/drawable-resource#Shape)
+- `val frameAmin: AnimationDrawable` yerine **as** kullanarak tanımladık `val frameAmin = image.background as AnimaationDrawable`
