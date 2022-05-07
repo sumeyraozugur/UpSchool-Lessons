@@ -10,12 +10,12 @@
 - Data gönderimi:
   - Bundle ile gönderme **argümant**  veya **intent.extra**  ile alıyoruz.
   - safe args 
-- Navigation Back Stack
+- Navigation Back Stack (Bu yapılarda her iki işlemde geri gidiyor.)
   - navigateUp()
     - A-> B ye giderken arkaya alıyor. burada silinen bir durum yok. Her şey üst üste bir yığın oluyor. Çok sık kullanmadığımız yığını kaldırmalıyız.
 
   - popBackStack()
-    - Bunu kullandığımızda siliyor ve ileri gidemiyoruz. Silinmiş bir ekrandan
+    - Bunu kullandığımızda siliyor ve ileri gidemiyoruz. Doğal olarak silinmiş bir ekrandan. Arkada kalan her şeyi temizlemiyor sadece yığından bir adım sonrasını temizliyor.
 
 
 
