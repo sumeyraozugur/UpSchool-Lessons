@@ -8,6 +8,8 @@
   - Fragment kullanım da geçişler, ui okuma daha hızlı.
 - **Fragment ten neden activity'e geçiş yapalım ki?**
   -  Bazı kütüphanler çok complex  mecbur activityde çalışmak zorunda. Bu gibi durumlarda activitye geçiş yapıyoruz
+- **Navigation kullanıyorum ,login ve register kısmını tüm uygulamamdan ayırmak istiyorum bunu nasıl yapabilirim? **
+  - Nested graph sayesinde yapabiliyorum. 
 
   
 ## Notlar
