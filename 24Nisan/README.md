@@ -16,6 +16,9 @@
 
   - popBackStack()
     - Bunu kullandığımızda siliyor ve ileri gidemiyoruz. Doğal olarak silinmiş bir ekrandan. Arkada kalan her şeyi temizlemiyor sadece yığından bir adım sonrasını temizliyor.
+- nav graph da **popUpTo** and **popUpToInclusive** kullanımı:
+   - Diyelim c den a ya gitmiş ve bir daha a dan c ye geri dönüş sağlamak istemiyorsunuz.
+- nav graph kullanarak geçişlerde rahatlıkla animasyonda kullanabiliriz.
 
 
 
