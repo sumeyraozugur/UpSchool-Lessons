@@ -28,6 +28,6 @@ override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
 
 ```
 
-`findNavController().navigate(R.id.action_AFragment_to_loginActivity)` yerine intent kullanabilirsin şu şekilde
+`findNavController().navigate(R.id.action_AFragment_to_loginActivity)` yerine intentte kullanabilirsin şu şekilde
 `startActivity(Intent(context, LoginActivity::class.java))`
 
