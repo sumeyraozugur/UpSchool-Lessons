@@ -10,7 +10,7 @@
   -  Bazı kütüphanler çok complex  mecbur activityde çalışmak zorunda. Bu gibi durumlarda activitye geçiş yapıyoruz
 
   
-  
+## Notlar
 ```Kotlin
 //Dialog Fragment
 override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
