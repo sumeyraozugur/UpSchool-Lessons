@@ -1,5 +1,15 @@
 ## İçerik:
 23 Nisan içeriği tekrar edildi. Farklı bir örnekle
+- Nav graph
+- nested graph
+- pass data between destination using bundle
+- global action
+- pass data between destination using safe args
+
+### Not :
+- Data gönderimi:
+  - Bundle ile gönderme **argümant**  veya **intent.extra**  ile alıyoruz.
+  - safe args 
 
 
 ### Dialog fragment
