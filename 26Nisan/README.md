@@ -1,5 +1,6 @@
 ## İçerik:
-- Bottom Navigation View(Beraber çalıştık):
+- **Bottom Navigation View:**
   - List
   - Favorities
   - Settings
+- **Navigation Draver**
