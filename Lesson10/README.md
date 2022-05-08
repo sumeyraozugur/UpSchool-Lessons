@@ -1,8 +1,9 @@
 ## İçerik:
-- **Bottom Navigation View:**
-  - List
-  - Favorities
-  - Settings
+- **Bottom Navigation View:(List,Favorities,Settings)**
+  - Menu
+  - Battom Navigation
+  - Nav graph
+    - fragments 
 - **Navigation Draver**
 
  ### Notlar:
