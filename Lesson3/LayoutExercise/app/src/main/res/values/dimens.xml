@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="entry_title_size">39sp</dimen>
+    <dimen name="startimage_margintop_size">48dp</dimen>
+    <dimen name="edittext_paddingleft_size">20dp</dimen>
+    <dimen name="go_premium">18sp</dimen>
+</resources>

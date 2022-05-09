@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Text lerin ve size ların hard kod olmaması için
+    lamba ya tıklayıp Extract.. diyoruz.
+      -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="281dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="137dp"
+        app:srcCompat="@drawable/ic_main_image" />
+
+    <TextView
+        android:id="@+id/learnathome"
+        style="@style/EntryTittleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/learn_at_home"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <!-- textAllCaps ="false" text in hepsinin büyük olmasını engeller-->
+    <TextView
+        android:id="@+id/effective"
+        style="@style/HomeSubTitleStyle"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/efficiently_and_effectively"
+        app:layout_constraintEnd_toEndOf="@+id/learnathome"
+        app:layout_constraintStart_toStartOf="@+id/learnathome"
+        app:layout_constraintTop_toBottomOf="@+id/learnathome" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="186dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#2C2B47"
+        android:text="@string/start_now"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/effective" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
