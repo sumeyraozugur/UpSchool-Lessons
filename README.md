@@ -1,7 +1,7 @@
 # UpSchool-Lessons
 ## Content
 - Lesson2 -> DiceRoller
-- Lesson3 ->
+- Lesson3 -> Layout Exercise Project
 - Lesson4 -> Layout Türleri & Databinding
 - Lesson5 -> Design for Everyone
 - Lesson6 -> Design & Animations
