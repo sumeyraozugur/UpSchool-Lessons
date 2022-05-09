@@ -1,5 +1,5 @@
 ## İçerik:
-23 Nisan içeriği tekrar edildi. Farklı bir örnekle
+Lesson8 içeriği tekrar edildi. Farklı bir örnekle
 - Nav graph
 - nested graph
 - pass data between destination using bundle
