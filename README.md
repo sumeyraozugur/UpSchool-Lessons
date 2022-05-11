@@ -12,7 +12,7 @@
 - Lesson10 -> Bottom Navigation & NavigationDrawer
   Lesson11 -> LifeCycle
 - Lesson12 -> Recycleview
-  Lesson13 -> OnLifeCycleEvent for Lifecycle & Mvvm ui layer
+  Lesson13 -> OnLifeCycleEvent  & Mvvm ui layer
 
 ```
 
