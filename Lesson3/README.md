@@ -1,7 +1,7 @@
 # Layout Exercise
 - view,viewgroup
 - ölçü birimleri (dp,sp)
-- `android:ems ="10"` -> 10 karaktere kadar izin verir
+- `android:ems ="10"` -> 10 karaktere kadar izin verir.
 
 
 <div>
