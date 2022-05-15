@@ -1,6 +1,6 @@
 package com.sum.mvvm
 
-import android.database.DatabaseUtils
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
