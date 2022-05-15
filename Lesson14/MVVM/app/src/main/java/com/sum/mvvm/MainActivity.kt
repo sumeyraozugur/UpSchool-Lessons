@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 
@@ -27,6 +28,13 @@ class MainActivity : AppCompatActivity() {
         viewModel.score.observe(this, Observer{ newScore->
             scoreText.text = newScore.toString()
 
+
+        })
+
+        viewModel.eventGameFinish.observe(this, Observer{ isGameFinished ->
+            if(isGameFinished){
+                Toast.makeText(this,"Game Finished",Toast.LENGTH_LONG).show()
+            }
 
         })
 

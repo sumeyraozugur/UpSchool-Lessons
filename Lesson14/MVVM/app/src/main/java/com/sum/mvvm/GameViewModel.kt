@@ -9,13 +9,20 @@ class GameViewModel: ViewModel() {
     private var _score = MutableLiveData<Int>()
     var score: LiveData<Int> = _score
 
+    private var _eventGameFinish = MutableLiveData<Boolean>()
+    var eventGameFinish :LiveData<Boolean> =_eventGameFinish
+
     fun onMinusScore(){
         _score.value = score.value?.minus(1)
 
     }
 
     fun onPlusScore(){
-        _score.value = score.value?.plus(1)
+        when(_score.value){
+            10 -> {_eventGameFinish.value = true}
+            else -> {_score.value = score.value?.plus(1)}
+        }
+
 
     }
 
