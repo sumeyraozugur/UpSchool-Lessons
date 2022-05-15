@@ -1,24 +1,26 @@
 package com.sum.mvvm
 
 import android.util.Log
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class GameViewModel: ViewModel() {
-    var score = MutableLiveData<Int>()
+    private var _score = MutableLiveData<Int>()
+    var score: LiveData<Int> = _score
 
     fun onMinusScore(){
-        score.value = score.value?.minus(1)
+        _score.value = score.value?.minus(1)
 
     }
 
     fun onPlusScore(){
-        score.value = score.value?.plus(1)
+        _score.value = score.value?.plus(1)
 
     }
 
     init {
-        score.value = 0
+        _score.value = 0
         Log.v("AKBANK", "GameViewModel")
     }
 
