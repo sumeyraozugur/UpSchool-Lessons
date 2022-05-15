@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +24,13 @@ class MainActivity : AppCompatActivity() {
             viewModel.onMinusScore()
         }
 
-        scoreText.text = viewModel.score.value.toString()
+        viewModel.score.observe(this, Observer{ newScore->
+            scoreText.text = newScore.toString()
+
+
+        })
+
+
     }
 
 

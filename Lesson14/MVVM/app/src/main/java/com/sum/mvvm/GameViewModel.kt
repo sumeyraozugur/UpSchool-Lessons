@@ -18,6 +18,7 @@ class GameViewModel: ViewModel() {
     }
 
     init {
+        score.value = 0
         Log.v("AKBANK", "GameViewModel")
     }
 
