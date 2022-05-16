@@ -13,6 +13,9 @@
   Lesson11 -> LifeCycle
 - Lesson12 -> Recycleview
   Lesson13 -> OnLifeCycleEvent  & Mvvm ui layer
+- Lesson14 -> MVVM & Splash Screen
+  Lesson15 -> Room & Coroutine
+  
 
 ```
 
