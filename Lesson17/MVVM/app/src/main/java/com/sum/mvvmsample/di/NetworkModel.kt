@@ -1,6 +1,8 @@
 package com.sum.mvvmsample.di
 
+import com.sum.mvvmsample.data.repository.WeatherRepositoryImp
 import com.sum.mvvmsample.data.source.remote.ApiService
+import com.sum.mvvmsample.domain.repository.WeatherRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,7 +25,7 @@ class NetworkModel {
     @Singleton
     fun provideRetrofit(gsonConverterFactory: GsonConverterFactory): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("BASE_URL")
+            .baseUrl("https://api.weatherbit.io/v2.0/")
             .addConverterFactory(gsonConverterFactory)
             .build();
 
@@ -32,6 +34,13 @@ class NetworkModel {
     @Singleton
     fun provideService(retrofit: Retrofit): ApiService {
         return retrofit.create(ApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideWeatherRepository(apiService: ApiService):WeatherRepository{
+        return WeatherRepositoryImp(apiService)
+
     }
 
 }
