@@ -15,6 +15,9 @@
   Lesson13 -> OnLifeCycleEvent  & Mvvm ui layer
 - Lesson14 -> MVVM & Splash Screen
   Lesson15 -> Room & Coroutine
+- Lesson16 -> Shape, layout design sampla
+  Lesson17 -> MVVM Sample
+  
   
 
 ```
