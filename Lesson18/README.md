@@ -5,6 +5,24 @@
 
 
 
+```Kotlin
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var avatarImage: ImageView
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        avatarImage = findViewById(R.id.imageAvatar)
+
+        Picasso.get().load(repoModel!!.get(0).owner.avatar_url).into(avatarImage);
+        //Glide.with(this@MainActivity).load(repoModel!!.get(0).owner.avatar_url).into(avatarImage);
+
+```
+
+
+
 <div>
 <table>
   <tr>
