@@ -7,6 +7,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -18,17 +19,19 @@ class MainActivity : AppCompatActivity() {
 
         val retrofit =Retrofit.Builder()
             .baseUrl("https://api.github.com/")
-            .addConverterFactory(ScalarsConverterFactory.create())
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
 
         val service = retrofit.create(GithubService::class.java)
-        service.listRepos("octocat")?.enqueue(object : Callback<String>{
-            override fun onResponse(call: Call<String>, response: Response<String>?) {
-                Log.v("AKBANK", response?.body().toString())
+        service.listRepos("octocat")?.enqueue(object : Callback<RepoModel>{
+
+            override fun onResponse(call: Call<RepoModel>, response: Response<RepoModel>?) {
+                val repoModel = response?.body()
+                Log.v("AKBANK", repoModel.toString())
 
             }
 
-            override fun onFailure(call: Call<String>?, t: Throwable) {
+            override fun onFailure(call: Call<RepoModel>?, t: Throwable) {
                 Log.v("AKBANK","ERROR: ${t.message}")
 
             }
@@ -40,5 +43,5 @@ class MainActivity : AppCompatActivity() {
 
 interface GithubService{
     @GET("users/{user}/repos")
-    fun listRepos(@Path("user") user:String?): Call<String>?
+    fun listRepos(@Path("user") user:String?): Call<RepoModel>?
 }
