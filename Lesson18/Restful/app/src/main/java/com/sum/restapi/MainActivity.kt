@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
 
             override fun onResponse(call: Call<RepoModel>, response: Response<RepoModel>?) {
                 val repoModel = response?.body()
-                Log.v("AKBANK", repoModel.toString())
+                //Log.v("AKBANK", repoModel!!.get(0).description)
+                Log.v("AKBANK", repoModel!!.get(0).owner.id.toString())
 
             }
 
