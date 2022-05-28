@@ -34,9 +34,9 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<RepoModel>, response: Response<RepoModel>?) {
                 val repoModel = response?.body()
                 //Log.v("AKBANK", repoModel!!.get(0).description)
-               // Picasso.get().load("repoModel!!.get(0).owner.avatar_url").into(avatarImage);
-                Glide.with(this@MainActivity).load("repoModel!!.get(0).owner.avatar_url").into(avatarImage);
-                Log.v("AKBANK", repoModel!!.get(0).owner.avatar_url)
+                Picasso.get().load(repoModel!!.get(0).owner.avatar_url).into(avatarImage);
+                //Glide.with(this@MainActivity).load(repoModel!!.get(0).owner.avatar_url).into(avatarImage);
+                Log.v("AKBANK", repoModel!!.get(0).owner.avatar_url) // https://avatars.githubusercontent.com/u/583231?v=4
 
             }
 
