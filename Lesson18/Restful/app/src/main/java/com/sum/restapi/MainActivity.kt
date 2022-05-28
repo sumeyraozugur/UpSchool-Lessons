@@ -3,19 +3,25 @@ package com.sum.restapi
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
+import com.bumptech.glide.Glide
+import com.squareup.picasso.Picasso
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var avatarImage: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        avatarImage = findViewById(R.id.imageAvatar)
 
         val retrofit =Retrofit.Builder()
             .baseUrl("https://api.github.com/")
@@ -28,7 +34,9 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<RepoModel>, response: Response<RepoModel>?) {
                 val repoModel = response?.body()
                 //Log.v("AKBANK", repoModel!!.get(0).description)
-                Log.v("AKBANK", repoModel!!.get(0).owner.id.toString())
+               // Picasso.get().load("repoModel!!.get(0).owner.avatar_url").into(avatarImage);
+                Glide.with(this@MainActivity).load("repoModel!!.get(0).owner.avatar_url").into(avatarImage);
+                Log.v("AKBANK", repoModel!!.get(0).owner.avatar_url)
 
             }
 
